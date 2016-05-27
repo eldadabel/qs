@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="format-detection" content="telephone=no">
+        <?php
+            $indexFlag = get_field('allow_index');
+
+            if ($indexFlag == False) {
+                echo '<meta name="robots" content="noindex,nofollow" />';
+            }
+        ?>
+
+
+		<title><?php wp_title(''); ?></title>
+        
+
+		<!--link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"-->
+
+		<?php // wordpress head functions ?>
+		<?php wp_head(); ?>
+		<?php // end of wordpress head ?>
+
+		<?php // drop Google Analytics Here ?>
+		<?php // end analytics ?>
+
+        <?php /*
+             <meta name="author" content="QualityScore">
+
+            <meta property="og:url" content="http://www.qualityscore.co/" />
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content="Boutique Online Marketing - Quality Score LTD" />
+
+            <meta property="og:description" name="description" content="We provide online digital marketing services to a handful of clients that we work closely with to maximize roi, from ad impression to conversion."/>
+            <meta property="og:site_name" content="Quality Score"/>
+        */ ?>
+
+	</head>
+    
+    <?php global $body_class, $header_class; ?>
+    
+	<body class="<?php echo $body_class; ?>" >
+
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-GTM­WXG2JT"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM­WXG2JT');</script>
+    <!-- End Google Tag Manager -->
+
+
+        <div class="header <?php echo $header_class; ?>">
+          <div class="wrapper_2000">
+                 <div class="logo">
+                         <a href="<?php echo home_url(); ?>" class="xtr_logo"><?php bloginfo('name'); ?></a>
+                 </div>
+                 <a class="burgWrapper navBtn">
+                        <div class="burg"></div>
+                 </a>
+                 <?php /*
+                 <a class="blognavbtn"><span>Explore Blog</span></a>
+
+                 */ ?>
+          </div>
+        </div>
+        
+        
