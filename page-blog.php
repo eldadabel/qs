@@ -29,7 +29,7 @@ get_header(); ?>
                ?>
 
                <div class="element medium high">
-                  <a href="<?php the_permalink(); ?>" class="boxxx">
+                  <div class="boxxx">
                      <div class="imgboxxx full"  style="width: 100%;">
                        <img src="<?php echo bones_get_post_thumb($post->ID); ?>">
                      </div>
@@ -41,11 +41,11 @@ get_header(); ?>
                              <h5><?php show_authors(false) ?></h5>
                           </div>
                           <div class="ttxt">
-                              <h3><?php echo the_title(); ?></h3>
+                              <a href="<?php the_permalink(); ?>" class="theLink"><h3><?php echo the_title(); ?></h3></a>
                               <p><?php echo get_post_meta($post->ID, '_yoast_wpseo_metadesc', true); ?></p>
                           </div>
                      </div>
-                  </a>
+                  </div>
                 </div>
                
                <?php wp_reset_postdata(); ?>

@@ -437,6 +437,14 @@ jQuery(".header-title").click(function(){
 });
 */
 
+jQuery(".element").each(function(){
+  if($(this).find('.theLink').length != 0) {
+    $(this).click(function() {
+       window.location = $(this).find('.theLink').attr('href');
+    });
+  }
+});
+
 (function($) {
 
     jQuery.fn.visible = function(partial) {
