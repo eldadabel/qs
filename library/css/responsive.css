@@ -2084,6 +2084,7 @@ font-size: 4.5em;
 }
 .blog-grid .element .autor-details h5 {
     font-size: 0.7em;
+    max-width: 62%;
 }
 .left-side.post {
     padding: 0 65px 0 0px;
