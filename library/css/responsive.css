@@ -1205,6 +1205,10 @@ height: 50px;
 .blog-grid .element .autor-details {
     padding: 0 10px;
 }
+.blog-grid .element .boxxx .txtboxxx2 {
+    width: 43%;
+}
+
 .blog-grid .element .boxxx .txtboxxx2 .ttxt h3 {
     font-size: 1.35em;
 }
@@ -2445,7 +2449,7 @@ padding: 2em 1em 2em 1em;
     font-size: 1.3em;
 }
 .blog-grid .element .boxxx .txtboxxx2 .ttxt p {
-    display: none;
+    /*display: none;*/
 }
 .left-side .commentsbox h3 {
     font-size: 1.3em;
@@ -2462,8 +2466,8 @@ padding: 2em 1em 2em 1em;
     width: 6%;
     }
 .blog-grid .element .boxxx .txtboxxx2 .ttxt h3 {
-    font-size: 1.25em;
-    line-height: 1.4em;
+    font-size: 1em;
+    line-height: 1.25em;
 }
 .right-side #signbox .btn {
     width: 10%;
@@ -2794,7 +2798,7 @@ padding: 0 1em;
     padding: 1.5em;
 }
 .blog-grid .element .boxxx .txtboxxx2 .ttxt {
-    width: 70%;
+    /*width: 70%;*/
 }
 .blog-grid .element .boxxx .txtboxxx .ttxt h3 {
     font-size: 1.25em;
@@ -3087,6 +3091,11 @@ padding: 0 180px 0 180px;
 .blog-grid .high {
     height: 392px;
 }
+
+.blog-grid .element .boxxx .txtboxxx2  {
+    width: 53%;
+}
+
 .blog-grid .element .boxxx .txtboxxx .ttxt h3 {
     font-size: 1.15em;
 }
