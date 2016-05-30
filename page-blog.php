@@ -28,7 +28,7 @@ get_header(); ?>
                setup_postdata($post); 
                ?>
 
-               <div class="element medium high">
+               <div class="element medium high linkable">
                   <div class="boxxx">
                      <div class="imgboxxx full"  style="width: 100%;">
                        <img src="<?php echo bones_get_post_thumb($post->ID); ?>">
@@ -59,7 +59,7 @@ get_header(); ?>
                           $posts = get_posts( array( 'posts_per_page' => 3 ) );
                           
                           foreach ( $posts as $post ) : setup_postdata( $post ); ?>
-                          <li>
+                          <li class="linkable">
                                <div class="imgbox"><?php the_post_thumbnail('latest-thumbnail'); ?></div>
                                <a href="<?php the_permalink(); ?>" class="theLink p"><?php the_title(); ?></a>
                           </li>

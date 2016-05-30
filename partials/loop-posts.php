@@ -6,7 +6,7 @@
                     $user = get_user_meta($post->post_author); 
                 ?>
                 
-               <div class="element small regular">
+               <div class="element small regular linkable">
                   <div class="boxxx">
                      <div class="picture-box">
                         <img src="<?php echo bones_get_post_thumb($post->ID); ?>">
@@ -15,7 +15,7 @@
                         <div class="pic">
                           <?php echo get_avatar( get_the_author_meta( 'ID' ), 46 ); ?>
                         </div>
-                        <h5><?php _e('By', 'bonestheme'); ?> <span><?php the_author(); ?></span></h5>
+                        <h5><?php show_authors(false); ?></h5>
                      </div>
                      <div class="infopost">
                         <a href="<?php the_permalink(); ?>" class="theLink h3"><?php echo the_title(); ?></a>
