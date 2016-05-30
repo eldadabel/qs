@@ -431,11 +431,6 @@ loader();
   toggleHeader();
   openVideo();
 
-/*
-jQuery(".header-title").click(function(){
-  window.location = "/blog/"
-});
-*/
 
 jQuery(".linkable").each(function(){
   if($(this).find('.theLink').length != 0) {

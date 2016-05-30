@@ -2086,10 +2086,63 @@ font-size: 4.5em;
 .left-side {
     width: 75%;
 }
-.blog-grid .element .autor-details h5 {
+
+.blog-grid .element .boxxx .txtboxxx .pic{
+    width: 100%;
+}
+
+
+}
+
+.blog-grid .element .autor-details h5, .blog-grid .element .boxxx .txtboxxx2 h5, .blog-grid .element .boxxx .txtboxxx h5 {
     font-size: 0.7em;
     max-width: 62%;
+    margin: 25px 0 0 15px;
 }
+
+.blog-grid .element .boxxx .txtboxxx2 .ttxt .h3, .blog-grid .element .boxxx .txtboxxx2 .ttxt h3, .blog-grid .element .boxxx .txtboxxx .ttxt .h3 {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-weight: 300;
+    line-height: 1em;
+    margin-bottom: 0.25em;
+    font-family: 'open sans', Arial, Helvetica, sans-serif;
+    line-height: 1.2em;
+    font-size: 2em;
+    font-weight: 100;
+    line-height: 1.4em;
+    letter-spacing: -0.03em;
+    color: #fff;
+    width: 100%;
+    float: left;
+    display: block;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 0 0 10px 0
+}
+
+.blog-grid .element .boxxx .txtboxxx2 .ttxt p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    line-height: 1em;
+    font-family: 'open sans', Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 0.25em;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 1.8em;
+    font-weight: 300;
+    font-size: 0.84em;
+    line-height: 1.4em;
+}
+
 .left-side.post {
     padding: 0 65px 0 0px;
 }
@@ -2139,10 +2192,12 @@ font-size: 4.5em;
     width: 100%;
 }
 
+/*
 .blog-header .header-title {
     height: 150px;
     padding: 1em 0 0 0;
 }
+*/
 
 .blog-nav .categories li a {
     font-size: 1.3em;
@@ -2781,7 +2836,8 @@ padding: 0 1em;
     width: 80%;
 }
 .blog-grid .element .boxxx .txtboxxx .ttxt {
-    padding: 0 0 0 20px;
+    /*padding: 0 0 0 20px;*/
+    width: 100%;
 }
 .blog-grid .element .boxxx .txtboxxx2 .ttxt h3 {
     font-size: 1em;
@@ -3540,6 +3596,10 @@ padding: 0 60px 10px 60px;
 .left-side.post .headline .post-title {
     width: 75%;
 }
+
+.author-page .headline .author-details  {
+    width: 90%;
+}
 }
 
 @media screen and (max-width: 600px) {
@@ -3567,6 +3627,15 @@ padding: 0;
 .right-side {
     padding: 10px 15px;
 }
+
+.blog-grid .element .boxxx .txtboxxx2 .pic, .blog-grid .element .boxxx .txtboxxx .pic {
+    margin: -35px 0 10px 0;
+}
+
+.blog-grid .element .boxxx .txtboxxx2 .ttxt h3 {
+    padding: 0;
+}
+
 .post .blog-grid .element .picture-box {
     height: 200px;
 }
@@ -3595,7 +3664,9 @@ padding: 0;
 .blog-grid .small.high {
     height: 270px;
 }
-.blog-grid .element .boxxx .latest ul li p {
+.blog-grid .element .boxxx .latest ul li p, .blog-grid .element .boxxx .latest ul li .p {
+    padding-top: 0;
+    padding-bottom: 0;
     width: 75%;
 }
 .blog-grid .element .boxxx .latest ul li .imgbox {
@@ -4435,7 +4506,7 @@ font-size: 3em;
 }
 .blog-grid .element .boxxx .txtboxxx2 .ttxt h3 {
     font-size: 0.9em;
-    padding: 0 0 0 10px;
+    /*padding: 0 0 0 10px;*/
 }
 .blog-grid .element .boxxx .latest h4 {
     font-size: 1.25em;

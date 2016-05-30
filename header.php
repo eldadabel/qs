@@ -22,20 +22,6 @@
 		<?php wp_head(); ?>
 		<?php // end of wordpress head ?>
 
-		<?php // drop Google Analytics Here ?>
-		<?php // end analytics ?>
-
-        <?php /*
-             <meta name="author" content="QualityScore">
-
-            <meta property="og:url" content="http://www.qualityscore.co/" />
-            <meta property="og:type" content="website" />
-            <meta property="og:title" content="Boutique Online Marketing - Quality Score LTD" />
-
-            <meta property="og:description" name="description" content="We provide online digital marketing services to a handful of clients that we work closely with to maximize roi, from ad impression to conversion."/>
-            <meta property="og:site_name" content="Quality Score"/>
-        */ ?>
-
 	</head>
     
     <?php global $body_class, $header_class; ?>
@@ -61,10 +47,6 @@
                  <a class="burgWrapper navBtn">
                         <div class="burg"></div>
                  </a>
-                 <?php /*
-                 <a class="blognavbtn"><span>Explore Blog</span></a>
-
-                 */ ?>
           </div>
         </div>
         
