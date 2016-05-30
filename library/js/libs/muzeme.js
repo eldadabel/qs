@@ -431,11 +431,11 @@ loader();
   toggleHeader();
   openVideo();
 
-
+/*
 jQuery(".header-title").click(function(){
   window.location = "/blog/"
 });
-
+*/
 
 (function($) {
 

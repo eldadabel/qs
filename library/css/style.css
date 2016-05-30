@@ -6093,6 +6093,7 @@ body.methodology {
   height: 240px;
   overflow: hidden;
   cursor: pointer;
+  display: block;
 }
 .blog-header h2 {
   width: 100%;
