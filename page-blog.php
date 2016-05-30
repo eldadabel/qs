@@ -41,7 +41,7 @@ get_header(); ?>
                              <h5><?php show_authors(false) ?></h5>
                           </div>
                           <div class="ttxt">
-                              <a href="<?php the_permalink(); ?>" class="theLink"><h3><?php echo the_title(); ?></h3></a>
+                              <a href="<?php the_permalink(); ?>" class="theLink h3"><?php echo the_title(); ?></a>
                               <p><?php echo get_post_meta($post->ID, '_yoast_wpseo_metadesc', true); ?></p>
                           </div>
                      </div>
@@ -60,10 +60,8 @@ get_header(); ?>
                           
                           foreach ( $posts as $post ) : setup_postdata( $post ); ?>
                           <li>
-                             <a href="<?php the_permalink(); ?>">
                                <div class="imgbox"><?php the_post_thumbnail('latest-thumbnail'); ?></div>
-                               <p><?php the_title(); ?></p>
-                             </a>
+                               <a href="<?php the_permalink(); ?>" class="theLink p"><?php the_title(); ?></a>
                           </li>
                           <?php endforeach; 
                             wp_reset_postdata();?>
