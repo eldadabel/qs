@@ -7342,10 +7342,14 @@ hr {
 }
 .author-page .headline .author-pic {
   float: left;
+  width: 130px;
+  height: 130px;
 }
 .author-page .headline .author-pic img {
   border-radius: 100px;
   border: 4px solid #f9f9f9;
+  width: 130px;
+  height: 130px;
 }
 .author-page .headline .author-details {
   width: 75%;

@@ -61,7 +61,7 @@ function toggleNavigation() {
 
 function toggleHeader(){
 	var $header = jQuery('.header');
-  var $blogNav = jQuery('.category .blog-nav');
+  var $blogNav = jQuery(' .blog-nav');
   var $categoryHeader = jQuery('.category .header.blog');
 	var $windowScroll = jQuery(window).scrollTop();
   var scrollTrigger = 100;

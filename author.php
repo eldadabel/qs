@@ -17,7 +17,7 @@ get_header(); ?>
 
               <div class="headline">
                    <div class="author-pic">
-                        <?php echo get_avatar( get_the_author_meta( 'ID' ), 130 ); ?>
+                        <?php echo get_avatar( get_the_author_meta( 'ID' ), 300 ); ?>
 
                    </div>
                    <div class="author-details">
