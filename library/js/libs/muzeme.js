@@ -311,13 +311,17 @@ var getUrlParameter = function getUrlParameter(sParam) {
 
 
 
+
 jQuery(document).ready(function($){
 
-  var hash = getUrlParameter('part');
+  var hash = window.location.hash;
   if (hash != undefined)
   {
-    var dest = Math.ceil($("#" + hash).offset().top  - $(".blog-grid").offset().top + 130 + window.innerWidth / 22 );
-    window.scrollTo(0, dest);
+    var dest = Math.ceil($(hash).offset().top  - $(".blog-grid").offset().top + 130 + window.innerWidth / 20 );
+    setTimeout(function(){
+      window.scrollTo(0, dest);
+    },90);
+    
   }
 
 
