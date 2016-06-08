@@ -2,6 +2,8 @@
 /*
  Template Name: Capabilities
 */
+  global $header_class;
+$header_class = "home";
 ?>
 
 <?php get_header(); ?>

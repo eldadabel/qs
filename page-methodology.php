@@ -2,6 +2,8 @@
 /*
  Template Name: Methodology
 */
+  global $header_class;
+$header_class = "home";
 ?>
 
 <?php 
