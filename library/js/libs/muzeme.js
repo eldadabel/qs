@@ -8,15 +8,17 @@ function loader() {
   if (jQuery('body').hasClass('methodology') == false) {
     jQuery('body').addClass('loaded');
     wasInitialized = true;
-  } 
+  } else {
+    var video = document.getElementById("methodVideo");
+
+    video.addEventListener('loadeddata', function() {
+       jQuery('body').addClass('loaded');
+        wasInitialized = true;
+    }, false);
+  }
 }
 
-var video = document.getElementById("methodVideo");
 
-video.addEventListener('loadeddata', function() {
-   jQuery('body').addClass('loaded');
-    wasInitialized = true;
-}, false);
 
 
 
@@ -546,8 +548,60 @@ jQuery(".linkable").each(function(){
      });
   }
 
-//function: blog scroll down
+// Fix size of articles in blog home
+
+if ( jQuery('.bloghome').length ) {
+  resizeBlogPosts();
+  window.addEventListener("resize", resizeBlogPosts, false);
+
+}
+
+function resizeBlogPosts() {
+  console.log("resize");
+  var currentRow = [];
+  var currentY = 0;
+  var currentMaxHeight = 0;
+
+  jQuery('.regular').each(function(){
+    $(this).height("auto");
+  });
+
+  jQuery('.regular').each(function(){
+    if (currentY == 0){ // PUSH THE FIRST ONE
+      currentY = $(this).offset().top;
+    }
+
+    if ($(this).offset().top == currentY) {
+      if ($(this).height() > currentMaxHeight) {
+        currentMaxHeight = $(this).height();
+      }
+      currentRow.push($(this));
+    } else {
+      matchPostsHeights();
+
+      currentY = $(this).offset().top;
+      currentMaxHeight = $(this).height();
+    }
+
+
+
+  });
+
+  matchPostsHeights();
+
+  function matchPostsHeights() {
+    if (currentRow.length > 0) {
+        for (var i=0; i<currentRow.length; i++) {
+          currentRow[i].height(currentMaxHeight);
+        }
+
+        currentRow = [];
+      }
+  }
+}
 
 
 
 });
+
+

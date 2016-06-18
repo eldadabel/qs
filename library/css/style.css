@@ -1,9 +1,6 @@
 /*
 Theme Name: quality score
-Theme URI: http://muze-studio.co.il
-Description: Developed by <a href="http://muze-studio.co.il/">muze</a> studio
-Author: <a href="http://muze-studio.co.il/">muze</a>.
-Author URI: http://muze-studio.co.il/
+
 */
 /* Clean Buttons Start */
 /* Clean Buttons End */
@@ -6846,7 +6843,7 @@ body.methodology {
 .blog-grid .element .infopost {
   width: 100%;
   float: left;
-  padding: 15px;
+  padding: 15px 15px 65px 15px;
 }
 .blog-grid .element .infopost .h3,
 .blog-grid .element .infopost h3 {
@@ -6894,6 +6891,9 @@ body.methodology {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   font-family: 'open sans', Arial, Helvetica, sans-serif;
+  position: absolute;
+  bottom: 0;
+  left: 15px;
 }
 .blog-grid .medium {
   width: 66.666%;

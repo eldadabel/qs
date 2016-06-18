@@ -6,7 +6,7 @@
 
 <?php 
 global $body_class, $header_class;
-$body_class = "blog";
+$body_class = "blog bloghome";
 $header_class = "blog";
 
 get_header(); ?>

@@ -953,7 +953,11 @@ margin: 1em 0 8px 0;
     font-size: 1.45em;
 }
 .blog-grid .element .infopost {
-    padding: 10px;
+    padding: 10px 10px 65px 10px;
+}
+
+.blog-grid .element .infopost .btn{
+    left: 10px;
 }
 .left-side.post {
     padding: 0 70px 0 12px;
@@ -1237,8 +1241,13 @@ height: 50px;
     min-height: 370px;
 }
 .blog-grid .element .infopost {
-    padding: 10px;
+    padding: 10px 10px 65px 10px;
 }
+
+.blog-grid .element .infopost .btn{
+    left: 10px;
+}
+
 .blog-grid .element .boxxx .txtboxxx .picbox {
     width: 50px;
     height: 50px;
@@ -2495,8 +2504,13 @@ padding: 2em 1em 2em 1em;
     height: 390px;
 }
 .blog-grid .element .infopost {
-    padding: 10px 8px 10px 8px;
+    padding: 10px 8px 65px 8px;
 }
+
+.blog-grid .element .infopost .btn{
+    left: 10px;
+}
+
 .left-side .related-posts h3 {
     font-size: 1.3em;
 }
@@ -3653,8 +3667,13 @@ padding: 0;
     line-height: 1.4em;
 }
 .blog-grid .element .infopost {
-    padding: 10px 2px 10px 2px;
+    padding: 10px 2px 65px 2px;
 }
+
+.blog-grid .element .infopost .btn{
+    left: 0px;
+}
+
 .blog-grid .element .picture-box {
     height: 156px;
 }
