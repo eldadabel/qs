@@ -26,8 +26,8 @@ get_header(); ?>
 
    <div id="scene" class="methode-section">
        <div class="movie-wrap">
-           <video class="methode-movie" preload="true">
-                 <source src="<?php the_field('video'); ?>" type="video/mp4"> 
+           <video class="methode-movie" preload="true" id="methodVideo">
+                 <source src="<?php the_field('video'); ?>" type="video/mp4" "> 
                  <!-- <source src="images/movie.webm" type="video/webm"> -->
          </video>
        </div>

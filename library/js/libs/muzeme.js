@@ -1,12 +1,22 @@
 var wasInitialized = false, stellalrIsActive;
 
 function loader() {
-if (wasInitialized) {
-    return;
+  if (wasInitialized) {
+      return;
+  }
+
+  if (jQuery('body').hasClass('methodology') == false) {
+    jQuery('body').addClass('loaded');
+    wasInitialized = true;
+  } 
 }
-jQuery('body').addClass('loaded');
-wasInitialized = true;
-}
+
+var video = document.getElementById("methodVideo");
+
+video.addEventListener('loadeddata', function() {
+   jQuery('body').addClass('loaded');
+    wasInitialized = true;
+}, false);
 
 
 
@@ -315,12 +325,12 @@ var getUrlParameter = function getUrlParameter(sParam) {
 jQuery(document).ready(function($){
 
   var hash = window.location.hash;
-  if (hash != undefined)
+  if (hash != undefined && hash != "" && $( ".blog-grid" ).length > 0)
   {
-    var dest = Math.ceil($(hash).offset().top  - $(".blog-grid").offset().top + 130 + window.innerWidth / 20 );
+    var dest = Math.ceil($(hash).offset().top  - $(".blog-grid").offset().top + 130 + window.innerWidth / 22 );
     setTimeout(function(){
       window.scrollTo(0, dest);
-    },90);
+    },500);
     
   }
 

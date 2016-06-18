@@ -3,7 +3,7 @@
 
 
   // form settings
-  $send_to      = "muze@muze-studio.co.il";
+  $send_to      = "shira@qualityscore.co";
   $subject      = "Contact email from qualityscore";
 
   

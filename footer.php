@@ -34,13 +34,9 @@
                        <div class="wrapper_2000">
                                <div class="inner">
                                            <div class="left">
-                                               <span>All Rights Reserved to Quality Score LTD 2016 | &nbsp;</span>
-                                               <a>Site Map</a>
+                                               <span>All Rights Reserved to Quality Score LTD 2016</span>
                                            </div>
 
-                                           <div class="right">
-                                                  <a href="http://www.muze-studio.co.il" target="_blank" class="muze-credit">Site by Muze</a> 
-                                           </div>
                                </div>
                        </div>
               </div>

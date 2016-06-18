@@ -58,6 +58,12 @@ function bones_ahoy() {
   // cleaning up excerpt
   add_filter( 'excerpt_more', 'bones_excerpt_more' );
 
+  // remove the links to the general feeds: Post and Comment Feed
+  remove_action( 'wp_head', 'feed_links', 2 ); // Display the links to the general feeds: Post and Comment Feed
+
+
+
+
 } /* end bones ahoy */
 
 // let's get this party started
