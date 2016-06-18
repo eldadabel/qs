@@ -4035,6 +4035,11 @@ margin-left: -70%;
 }
 
 @media screen and (max-width: 500px) {
+
+sup {
+    width: 100%;
+    margin: 20px 0;
+}
 .minimal-section .left .inner-wrap .middle h3 {
 font-size: 1.5em;
 padding: 0 2em;
