@@ -3,11 +3,12 @@
  * CLIENT TEMPLATE
  *
 */
+
 ?>
 
 <?php 
 global $body_class;
-$body_class = "study";
+$body_class = "home study";
 
 get_header(); 
 ?>

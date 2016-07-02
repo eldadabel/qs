@@ -7,7 +7,7 @@
 
 <?php 
 global $body_class;
-$body_class = "clients";
+$body_class = "home clients";
 
 get_header(); 
 ?>
