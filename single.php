@@ -70,8 +70,7 @@ get_header(); ?>
 
            </div>
          </div>
-
-        <a class="explore-more modalBoxOpen" data-window="modal-subscribe">
+        <a class="explore-more modalBoxOpen" data-window="modal-subscribe" data-modal-category="signup" data-modal-action="newsletter" data-modal-label="postbottom">
              <div class="wrapper_700">
                   <h3><?php the_field('footer_title', 312); ?></h3>
                   <ul>

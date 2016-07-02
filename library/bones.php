@@ -143,7 +143,7 @@ function bones_scripts_and_styles() {
         wp_enqueue_script('bones-methode', BONES_URI . '/library/js/libs/methode.js', array('jquery'), '1', true );
         wp_enqueue_script('bones-imagesloaded', BONES_URI . '/library/js/libs/imagesloaded.pkgd.min.js', array('jquery'), '1', true );
         wp_enqueue_script('bones-muzeme', BONES_URI . '/library/js/libs/muzeme.js', array('jquery'), '1', true );
-        wp_enqueue_script('bones-ajax-contact', BONES_URI . '/library/js/libs/php/ajax_contact.js', array('jquery'), '1.1', true );
+        wp_enqueue_script('bones-ajax-contact', BONES_URI . '/library/js/libs/php/ajax_contact.js', array('jquery'), '1.2', true );
         wp_enqueue_script('bones-smooth-scroll', BONES_URI . '/library/js/libs/smooth-scroll.js', array('jquery'), '1', true );
         wp_enqueue_script('bones-waypoinys', BONES_URI . '/library/js/libs/jquery.waypoints.min.js', array('jquery'), '1', true );
       

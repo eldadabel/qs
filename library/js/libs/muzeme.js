@@ -1,4 +1,27 @@
 var wasInitialized = false, stellalrIsActive;
+modalCategory = null;
+modalAction = null;
+modalLabel = null;
+
+function sendGAevent(eventCategory, eventAction, eventLabel, eventValue) {
+  ga('send', 'event', eventCategory, eventAction, eventLabel, eventValue);
+}
+
+function addGAtriggers() {
+  jQuery('.bloghome .mainBanner').click(function(){
+    sendGAevent('banner', 'click','bloghome', null);
+  });
+
+  jQuery('.post .widget_sp_image-image-link').click(function(){
+    sendGAevent('banner', 'click', 'posttopright', null);
+  });
+
+  jQuery('.formbox #mc-embedded-subscribe').click(function(){
+    sendGAevent('signup', 'newsletter', 'posttopright', null);
+  });
+}
+
+
 
 function loader() {
   if (wasInitialized) {
@@ -326,6 +349,8 @@ var getUrlParameter = function getUrlParameter(sParam) {
 
 jQuery(document).ready(function($){
 
+  addGAtriggers();
+
   var hash = window.location.hash;
   if (hash != undefined && hash != "" && $( ".blog-grid" ).length > 0)
   {
@@ -421,7 +446,11 @@ loader();
   });
 
   jQuery('.modalBoxOpen').on('click',function(e){
-    e.preventDefault();	
+    e.preventDefault();
+
+    modalCategory = jQuery(this).attr('data-modal-category');
+    modalAction = jQuery(this).attr('data-modal-action');
+    modalLabel = jQuery(this).attr('data-modal-label');
 
     var $this = jQuery(this);
     modalBoxOpen($this);
@@ -550,7 +579,7 @@ jQuery(".linkable").each(function(){
 
 // Fix size of articles in blog home
 
-if ( jQuery('.bloghome').length ) {
+if ( jQuery('.bloghome').length || jQuery('.post').length) {
   resizeBlogPosts();
   window.addEventListener("resize", resizeBlogPosts, false);
 

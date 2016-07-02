@@ -77,7 +77,7 @@ get_header(); ?>
 
               
                <div class="element large banner">
-                   <a href="//www.qualityscore.co/" class="boxxx">
+                   <a href="//www.qualityscore.co/" class="boxxx mainBanner" >
                       <span data-picture="" data-alt="blog picture">
                                 <?php $item_count = 0; $noscript_image = "";?>
                                 <?php if( have_rows('banner_images') ): while( have_rows('banner_images') ): the_row(); 
@@ -144,7 +144,7 @@ get_header(); ?>
             </div>
         </div>
       
-        <a class="explore-more modalBoxOpen" data-window="modal-subscribe">
+        <a class="explore-more modalBoxOpen" data-window="modal-subscribe" data-modal-category="signup" data-modal-action="newsletter" data-modal-label="homepagebottom">
              <div class="wrapper_700">
                   <h3><?php the_field('footer_title'); ?></h3>
                   <ul>

@@ -1,5 +1,7 @@
 <?php 
 //error_reporting(E_ALL ^ E_NOTICE); // hide all basic notices from PHP
+
+
 define('WP_USE_THEMES', false);
 require('../../../../../../../wp-blog-header.php');
 
@@ -93,7 +95,7 @@ html;
         $boundary = md5("sanwebe"); 
         //header
         $headers = "MIME-Version: 1.0\r\n"; 
-        $headers .= "From:".$clean['email']."\r\n"; 
+        $headers .= "From:".$send_to."\r\n"; 
         $headers .= "Reply-To: ".$clean['email']."" . "\r\n";
         $headers .= "Content-Type: multipart/mixed; boundary = $boundary\r\n\r\n"; 
         
@@ -112,14 +114,14 @@ html;
         $body .= $encoded_content; 
     }else{
         //proceed with PHP email.
-        $headers = "From:".$clean['email']."\r\n".
+        $headers = "From:".$send_to."\r\n".
         'Reply-To: '.$clean['email'].'' . "\n" .
         'X-Mailer: PHP/' . phpversion();
         $body = $message_body;
     }
 
     //$headers = 'Content-Type: text/html;From: ' .' <'.$clean['email'].'>' . "\r\n" . 'Reply-To: ' . $clean['email'];
-
+    
     mail($send_to, $subject, $body, $headers);
 
     echo 'sent';

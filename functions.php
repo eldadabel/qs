@@ -57,6 +57,8 @@ function bones_ahoy() {
   add_filter( 'the_content', 'bones_filter_ptags_on_images' );
   // cleaning up excerpt
   add_filter( 'excerpt_more', 'bones_excerpt_more' );
+  // add contact to site footer
+  add_filter( 'wp_nav_menu_items', 'your_custom_menu_item', 10, 2 );
 
   // remove the links to the general feeds: Post and Comment Feed
   remove_action( 'wp_head', 'feed_links', 2 ); // Display the links to the general feeds: Post and Comment Feed
@@ -281,6 +283,16 @@ function show_authors($withNicks = true) {
 
   echo $output ;
 }
+
+function your_custom_menu_item( $items, $args ) {
+    error_log($args->theme_location);
+    if ($args->theme_location == 'footer-menu') {
+        $items .= '<li><a class="modalBoxOpen" data-window="modal-contact" data-modal-category="contact" data-modal-action="website" data-modal-label="footer">Contact</a></li>';
+    }
+    
+    return $items;
+}
+
 
 
 

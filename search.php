@@ -24,7 +24,7 @@ get_header(); ?>
            </div>
          </div>
 
-        <a class="explore-more modalBoxOpen" data-window="modal-subscribe">
+        <a class="explore-more modalBoxOpen" data-window="modal-subscribe" data-modal-category="signup" data-modal-action="newsletter" data-modal-label="postbottom">
              <div class="wrapper_700">
                         <h3><?php echo ot_get_option( 'category_footer_cta_title' ); ?></h3>
                         <ul>

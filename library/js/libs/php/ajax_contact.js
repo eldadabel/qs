@@ -21,7 +21,8 @@
                     thisform.slideUp("fast", function() {				   
                         $(this).before('<div class="'+successClass+'">' + QS_DATA.thank_you_message + '</div>');
                     });
-                    
+
+
                     return true;
                     
                 }
@@ -54,6 +55,9 @@
 
                     });
 			     }
+
+			    sendGAevent(modalCategory, modalAction, modalLabel, '1');
+
             }
 
             return false;	

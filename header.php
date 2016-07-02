@@ -21,6 +21,8 @@
     
 	<body class="<?php echo $body_class; ?>" >
 
+    <?php include_once("analyticstracking.php") ?>
+
     <!-- Google Tag Manager -->
     <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-GTM­WXG2JT"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

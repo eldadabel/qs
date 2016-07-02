@@ -197,7 +197,7 @@ $header_class = "home";
           </div>
 
 
-          <a class="explore-more modalBoxOpen" data-window="modal-contact">
+          <a class="explore-more modalBoxOpen" data-window="modal-contact" data-modal-category="contact" data-modal-action="website" data-modal-label="pagebottom" >
                <div class="wrapper_700">
                           <h3><?php the_field('footer_title'); ?></h3>
                           <ul>
