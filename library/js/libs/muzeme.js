@@ -4,7 +4,13 @@ modalAction = null;
 modalLabel = null;
 
 function sendGAevent(eventCategory, eventAction, eventLabel, eventValue) {
-  ga('send', 'event', eventCategory, eventAction, eventLabel, eventValue);
+  //ga('send', 'event', eventCategory, eventAction, eventLabel, eventValue);
+  dataLayer.push({
+  'eventCategory': 'eventCategory',
+  'eventAction': 'eventAction',
+  'eventLabel': 'eventLabel',
+  'eventValue': 'eventValue'
+});
 }
 
 function addGAtriggers() {

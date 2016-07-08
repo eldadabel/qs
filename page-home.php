@@ -185,6 +185,34 @@ $header_class = "home";
 
 
 
+          <div class="middle-text blog-tease">
+                      <div class="wrapper_700">
+                         <h3><?php the_field('blog_title'); ?></h3>
+                         <!-- <div class="border"></div> -->
+                      </div>
+                      <div class="articles home-blog-grid" >
+                         <div class="wrapper_1550">
+                               <?php 
+                              global $post_cta_text;
+                              $post_cta_text = __('Read Post', 'bonestheme'); 
+                            ?>
+                            <?php if( have_rows('blog_articles') ): ?>
+                            <?php while( have_rows('blog_articles') ): the_row();  ?>                                
+                                <?php get_template_part('partials/loop', 'homepage-posts'); ?>
+                            <?php endwhile; endif; ?>
+
+                         </div>
+
+                      </div>
+                      <div class="clients-btnbox">
+                        <a href="/blog" class="button-blue-border"><?php the_field('blog_cta'); ?></a>
+                      </div>
+
+
+          </div>
+
+
+
         <a class="explore-more modalBoxOpen" data-window="modal-contact" data-modal-category="contact" data-modal-action="website" data-modal-label="pagebottom">
              <div class="wrapper_700">
                         <h3><?php the_field('footer_title'); ?></h3>
