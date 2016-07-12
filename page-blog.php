@@ -76,7 +76,7 @@ get_header(); ?>
                 <?php endwhile; endif; ?>
 
               
-               <div class="element large banner">
+               <div class="element large banner" id="blogBanner">
                    <a href="//www.qualityscore.co/" class="boxxx mainBanner" >
                       <span data-picture="" data-alt="blog picture">
                                 <?php $item_count = 0; $noscript_image = "";?>

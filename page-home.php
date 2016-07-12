@@ -190,7 +190,7 @@ $header_class = "home";
                          <h3><?php the_field('blog_title'); ?></h3>
                          <!-- <div class="border"></div> -->
                       </div>
-                      <div class="articles home-blog-grid" >
+                      <div class="articles blog-grid" >
                          <div class="wrapper_1550">
                                <?php 
                               global $post_cta_text;

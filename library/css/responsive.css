@@ -2908,6 +2908,10 @@ padding: 0 1em;
     display: none;
 }
 
+.blog-tease .blog-grid .small:last-child {
+    display: none;
+}
+
 
 .methode-section .slider_wrap #full-width-slider .slide .rightside {
     width: 80%;
@@ -3668,6 +3672,10 @@ padding: 0;
 }
 
 .home-blog-grid .small:last-child{
+    display: block;
+}
+
+.blog-tease .blog-grid .small:last-child {
     display: block;
 }
 
