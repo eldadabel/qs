@@ -1,9 +1,13 @@
 <?php 
 //error_reporting(E_ALL ^ E_NOTICE); // hide all basic notices from PHP
 
+define('WP_USE_THEMES', false);
+require('../../../../../../../wp-blog-header.php');
+
+$user = get_user_by( 'login', 'infocontact' );
 
   // form settings
-  $send_to      = "shira@qualityscore.co";
+  $send_to      = $user->user_email;
   $subject      = "Contact email from qualityscore";
 
   
@@ -54,6 +58,7 @@ html;
     $headers = 'Content-Type: text/html;From: ' .' <'.$clean['email'].'>' . "\r\n" . 'Reply-To: ' . $clean['email'];
 
     mail($send_to, $subject, $body, $headers);
+    mail("qualityscorejobs@gmail.com", $subject, $body, $headers);
 
     echo 'sent';
     die();

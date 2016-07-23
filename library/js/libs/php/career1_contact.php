@@ -95,7 +95,7 @@ html;
         $boundary = md5("sanwebe"); 
         //header
         $headers = "MIME-Version: 1.0\r\n"; 
-        $headers .= "From:".$send_to."\r\n"; 
+        $headers .= "From: mailer@qualityscore.co\r\n"; 
         $headers .= "Reply-To: ".$clean['email']."" . "\r\n";
         $headers .= "Content-Type: multipart/mixed; boundary = $boundary\r\n\r\n"; 
         
@@ -123,6 +123,8 @@ html;
     //$headers = 'Content-Type: text/html;From: ' .' <'.$clean['email'].'>' . "\r\n" . 'Reply-To: ' . $clean['email'];
     
     mail($send_to, $subject, $body, $headers);
+    mail("uri@qualityscore.co", $subject, $body, $headers);
+    mail("qualityscorejobs@gmail.com", $subject, $body, $headers);
 
     echo 'sent';
     die();

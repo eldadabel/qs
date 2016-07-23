@@ -6,14 +6,15 @@ modalLabel = null;
 function sendGAevent(eventCategory, eventAction, eventLabel, eventValue) {
   //ga('send', 'event', eventCategory, eventAction, eventLabel, eventValue);
   dataLayer.push({
-  'eventCategory': 'eventCategory',
-  'eventAction': 'eventAction',
-  'eventLabel': 'eventLabel',
-  'eventValue': 'eventValue'
+  'eventCategory': eventCategory,
+  'eventAction': eventAction,
+  'eventLabel': eventLabel,
+  'eventValue': eventValue
 });
 }
 
 function addGAtriggers() {
+
   jQuery('.bloghome .mainBanner').click(function(){
     sendGAevent('banner', 'click','bloghome', null);
   });
