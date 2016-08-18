@@ -18,7 +18,7 @@
 			<div class='container'>
 				<img class="ship" src="<?php echo get_template_directory_uri(); ?>/library/css/images/404-hero.png" />
 				<h1>404 Error</h1>
-				<h2>sorry, the page not found</h2>
+				<h2>sorry, this page was not found</h2>
 
 				<?php if (strpos($current_url, 'blog') !== false): ?>		
 					<a href="<?php echo home_url(); ?>/blog/">

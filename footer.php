@@ -124,6 +124,8 @@
                                                                                      <li>
                                                                                         <textarea name="message"  placeholder="Leave a message"></textarea>
                                                                                      </li>
+                                                                           
+                                                                                     
                                                                                      <li>
                                                                                         <button type="submit">Send</button>
                                                                                      </li>
@@ -151,7 +153,7 @@
                                                                   <div class="closingX"></div>
                                                            </a>
                                                            <div class="form-wrapper">
-                                                                       <h3>Join Us as an Experienced PPC Professional</h3>
+                                                                       <h3>Join Us as <?php echo get_the_title(); ?></h3>
                                                                        
                                                                        <form id="career_contact" class="career_contact1" method="post" name="contact-form">
                                                                                <ul>
@@ -167,10 +169,14 @@
                                                                                      <li>
                                                                                         <textarea name="message"  placeholder="Tell us about you"></textarea>
                                                                                      </li>
+                                                                                     <li style="display:none;">
+                                                                                     <input type="text" name="position"  value="<?php echo get_the_title(); ?>" />
+                                                                                     </li>
                                                                                      <li>
                                                                                         <label>Upload your CV</label>
                                                                                         <input name="file" type="file">
                                                                                      </li>
+
                                                                                      <li>
                                                                                         <button type="submit">Send</button>
                                                                                      </li>

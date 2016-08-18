@@ -21,6 +21,7 @@ $user = get_user_by( 'login', 'careercontact' );
   $clean['last_name'] = '';
   $clean['email'] = '';
   $clean['message'] = '';
+  $clean['position'] = '';
 
   $clean = $_POST;
 
@@ -38,6 +39,8 @@ $user = get_user_by( 'login', 'careercontact' );
   if(isset($clean['message'])) $clean['message'] = nl2br($clean['message']);
   if(isset($clean['first_name'])) $clean['first_name'] = strip_tags($clean['first_name']);
   if(isset($clean['last_name'])) $clean['last_name'] = strip_tags($clean['last_name']);
+  if(isset($clean['position'])) $clean['position'] = strip_tags($clean['position']);
+
 
   // got any errors?
   if(isset($hasError)) {
@@ -45,8 +48,10 @@ $user = get_user_by( 'login', 'careercontact' );
     die();
   }
 
+ error_log($clean['position']);
+
 $message_body = <<<html
-Inquiry for Experienced PPC Professional\r\n
+Inquiry for {$clean['position']}\r\n
 Email address {$clean['email']}\r\n
 First Name {$clean['first_name']}\r\n
 Last Name {$clean['last_name']}\r\n
