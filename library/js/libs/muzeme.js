@@ -617,6 +617,7 @@ function resizeBlogPosts() {
 
       currentY = $(this).offset().top;
       currentMaxHeight = $(this).height();
+      currentRow.push($(this));
     }
 
 
